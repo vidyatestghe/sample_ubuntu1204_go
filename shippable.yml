@@ -7,8 +7,6 @@ go:
 env:
   - CI_REPORT=shippable/testresults/junit.xml
 
-build_image: shippableimages/ubuntu1204_go:0.0.1
-
 before_install:
   - source $HOME/.gvm/scripts/gvm;
   - if [[ $SHIPPABLE_GO_VERSION == "tip" ]]; then gvm install tip; gvm use tip; fi
