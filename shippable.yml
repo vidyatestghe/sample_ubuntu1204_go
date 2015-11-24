@@ -1,5 +1,6 @@
 language: go
 
+build_image: shipimg/ubuntu1204_go
 go:
   - 1.2
   - 1.3
